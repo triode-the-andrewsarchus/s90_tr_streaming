@@ -1,0 +1,21 @@
+[project]
+name = "s90-tr-streaming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vega Carlson", email = "johnathan698@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pychromecast>=14.0.10",
+    "pycryptodome>=3.23.0",
+]
+
+[project.scripts]
+s90 = "s90_tr_streaming.cli:main"
+s90-tr-streaming = "s90_tr_streaming.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
